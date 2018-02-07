@@ -8,23 +8,55 @@
 
 /* Begin PBXBuildFile section */
 		0696B089BB604B7368D2E0C2 /* Pods_testTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF42E88B78754DCB3A12C814 /* Pods_testTask.framework */; };
+		BAD0F035FE50ECA16B79C73A /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F36DDCBC3686508E36F0 /* String+localized.swift */; };
+		BAD0F161A425F8B7836B296D /* StringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0FF0984B14E1007D43530 /* StringManager.swift */; };
+		BAD0F4E620E35DD134E7BD08 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F17D7596B06A7C40FE8A /* AuthRouter.swift */; };
+		BAD0F5B1B18F4C26FEECB78C /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F5B064F416A4AC3A3120 /* LoginButton.swift */; };
+		BAD0F5FDE7689B26026199AA /* APIResponse.Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F7E4DA8C23E202BC2E01 /* APIResponse.Protocol.swift */; };
+		BAD0F734145C26E03B008871 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0FD79C178162CB018AA61 /* AuthViewController.swift */; };
+		BAD0F7D92A7BB174DF15F645 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0FB44626D101425ADF563 /* Validator.swift */; };
+		BAD0F829BAFD46DE8C317098 /* APIRequest.Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F5E4E7202A72D87A8F96 /* APIRequest.Protocol.swift */; };
+		BAD0F957D281946A78BFAB27 /* GetWeatherByZipRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F083744DFCC592EDD01C /* GetWeatherByZipRequest.swift */; };
 		BAD0FA390AA8859F1AA16DEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD0FC678A5C9E21B9CF815B /* LaunchScreen.storyboard */; };
+		BAD0FAC85505F9CB6EAF71A1 /* UIColor+customColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0FAE9FF56A15073B3D592 /* UIColor+customColors.swift */; };
+		BAD0FC63CCBD38B6CAC8BB09 /* ForgotPasswordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F33AE37A10199F370856 /* ForgotPasswordButton.swift */; };
+		BAD0FC6E7E982B11A055A96E /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F466C0596635E97AD9F8 /* WeatherAPI.swift */; };
 		BAD0FD2BAA145A48D086F4E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD0F80CE922032DBFA85689 /* Assets.xcassets */; };
+		BAD0FD7DC93A4DE45376CFB2 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F22FF9079479B8ECAC5C /* AuthModel.swift */; };
 		BAD0FE9670114034C994848B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD0F49D6B722170689D239C /* Main.storyboard */; };
+		BAD0FEC8FC779EA9570D06E3 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F9AB0D54B2CB20B7D5F7 /* AuthViewModel.swift */; };
+		BAD0FF0C9274DE1E57DE807B /* GetWeatherByZipResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0FA4948CDE92E0640E1AE /* GetWeatherByZipResponse.swift */; };
 		BAD0FF67731925E377B5E420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F5F62193BD4A50ED8598 /* AppDelegate.swift */; };
+		BAD0FF8CFE2CCD3EA1A838AC /* WeatherAPIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F0A7F6412A3404917446 /* WeatherAPIAdapter.swift */; };
 		BAD0FF9A16973D7758D0D13C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F4996CB308B0C0570F09 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		391708E67172D248C48357BF /* Pods-testTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testTask/Pods-testTask.debug.xcconfig"; sourceTree = "<group>"; };
 		4368D170AE9403FE76D63E50 /* Pods-testTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-testTask/Pods-testTask.release.xcconfig"; sourceTree = "<group>"; };
+		BAD0F083744DFCC592EDD01C /* GetWeatherByZipRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetWeatherByZipRequest.swift; sourceTree = "<group>"; };
+		BAD0F0A7F6412A3404917446 /* WeatherAPIAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPIAdapter.swift; sourceTree = "<group>"; };
 		BAD0F1034D8AE176C5E75383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAD0F14305B8EB1019F3BFD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		BAD0F17D7596B06A7C40FE8A /* AuthRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		BAD0F22FF9079479B8ECAC5C /* AuthModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		BAD0F33AE37A10199F370856 /* ForgotPasswordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordButton.swift; sourceTree = "<group>"; };
+		BAD0F36DDCBC3686508E36F0 /* String+localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
+		BAD0F466C0596635E97AD9F8 /* WeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		BAD0F4996CB308B0C0570F09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BAD0F56B79A458D2F4F7F6FB /* testTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD0F5B064F416A4AC3A3120 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		BAD0F5E4E7202A72D87A8F96 /* APIRequest.Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.Protocol.swift; sourceTree = "<group>"; };
 		BAD0F5F62193BD4A50ED8598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAD0F7E4DA8C23E202BC2E01 /* APIResponse.Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.Protocol.swift; sourceTree = "<group>"; };
 		BAD0F80CE922032DBFA85689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAD0F9AB0D54B2CB20B7D5F7 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		BAD0FA2A303CD529808708B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAD0FA4948CDE92E0640E1AE /* GetWeatherByZipResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetWeatherByZipResponse.swift; sourceTree = "<group>"; };
+		BAD0FAE9FF56A15073B3D592 /* UIColor+customColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+customColors.swift"; sourceTree = "<group>"; };
+		BAD0FB44626D101425ADF563 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		BAD0FD79C178162CB018AA61 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		BAD0FF0984B14E1007D43530 /* StringManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringManager.swift; sourceTree = "<group>"; };
 		EF42E88B78754DCB3A12C814 /* Pods_testTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -66,6 +98,10 @@
 				BAD0F5F62193BD4A50ED8598 /* AppDelegate.swift */,
 				BAD0F49D6B722170689D239C /* Main.storyboard */,
 				BAD0F4996CB308B0C0570F09 /* ViewController.swift */,
+				BAD0FB7433FA376069326C1D /* Modules */,
+				BAD0FAFC969F5D15708B52AB /* Extensions */,
+				BAD0FB8F1A58490F1BC4B74E /* Frameworks */,
+				BAD0FA1FFCE2AA2ED61D29A2 /* Entity */,
 			);
 			path = testTask;
 			sourceTree = "<group>";
@@ -78,6 +114,61 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BAD0F313204CBEEAEA52EFD7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0F17D7596B06A7C40FE8A /* AuthRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BAD0F3FDEE20DCFF8A7EF6D6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0FD79C178162CB018AA61 /* AuthViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BAD0F405C973507E65A00C67 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0F3FDEE20DCFF8A7EF6D6 /* ViewController */,
+				BAD0FEA85EA41C0BE2DDFB76 /* View */,
+				BAD0F6D8506DB65518444DE6 /* ViewModel */,
+				BAD0F6FD439BF841DC14F9D7 /* Model */,
+				BAD0F313204CBEEAEA52EFD7 /* Router */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		BAD0F6D8506DB65518444DE6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0F9AB0D54B2CB20B7D5F7 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BAD0F6FD439BF841DC14F9D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0F22FF9079479B8ECAC5C /* AuthModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAD0F791507C7C600524D896 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0F5E4E7202A72D87A8F96 /* APIRequest.Protocol.swift */,
+				BAD0F083744DFCC592EDD01C /* GetWeatherByZipRequest.swift */,
+				BAD0F7E4DA8C23E202BC2E01 /* APIResponse.Protocol.swift */,
+				BAD0FA4948CDE92E0640E1AE /* GetWeatherByZipResponse.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		BAD0F818A901F534B7B1D393 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +177,59 @@
 				4036F02F112364AD6F951FD3 /* Pods */,
 				294CE8AEEC4F3A085AD6CA2F /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		BAD0FA1FFCE2AA2ED61D29A2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0F791507C7C600524D896 /* API */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		BAD0FAFC969F5D15708B52AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0FAE9FF56A15073B3D592 /* UIColor+customColors.swift */,
+				BAD0F36DDCBC3686508E36F0 /* String+localized.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BAD0FB7433FA376069326C1D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0F405C973507E65A00C67 /* Auth */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BAD0FB8F1A58490F1BC4B74E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0FF0984B14E1007D43530 /* StringManager.swift */,
+				BAD0FC847D0E92DF15C42354 /* WeatherAPI */,
+				BAD0FB44626D101425ADF563 /* Validator.swift */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAD0FC847D0E92DF15C42354 /* WeatherAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0F0A7F6412A3404917446 /* WeatherAPIAdapter.swift */,
+				BAD0F466C0596635E97AD9F8 /* WeatherAPI.swift */,
+			);
+			path = WeatherAPI;
+			sourceTree = "<group>";
+		};
+		BAD0FEA85EA41C0BE2DDFB76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0F5B064F416A4AC3A3120 /* LoginButton.swift */,
+				BAD0F33AE37A10199F370856 /* ForgotPasswordButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,15 +302,19 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-testTask/Pods-testTask-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +364,22 @@
 			files = (
 				BAD0FF67731925E377B5E420 /* AppDelegate.swift in Sources */,
 				BAD0FF9A16973D7758D0D13C /* ViewController.swift in Sources */,
+				BAD0F734145C26E03B008871 /* AuthViewController.swift in Sources */,
+				BAD0F5B1B18F4C26FEECB78C /* LoginButton.swift in Sources */,
+				BAD0FAC85505F9CB6EAF71A1 /* UIColor+customColors.swift in Sources */,
+				BAD0F829BAFD46DE8C317098 /* APIRequest.Protocol.swift in Sources */,
+				BAD0F957D281946A78BFAB27 /* GetWeatherByZipRequest.swift in Sources */,
+				BAD0F5FDE7689B26026199AA /* APIResponse.Protocol.swift in Sources */,
+				BAD0FF0C9274DE1E57DE807B /* GetWeatherByZipResponse.swift in Sources */,
+				BAD0F4E620E35DD134E7BD08 /* AuthRouter.swift in Sources */,
+				BAD0F161A425F8B7836B296D /* StringManager.swift in Sources */,
+				BAD0FF8CFE2CCD3EA1A838AC /* WeatherAPIAdapter.swift in Sources */,
+				BAD0FC6E7E982B11A055A96E /* WeatherAPI.swift in Sources */,
+				BAD0F7D92A7BB174DF15F645 /* Validator.swift in Sources */,
+				BAD0FEC8FC779EA9570D06E3 /* AuthViewModel.swift in Sources */,
+				BAD0FD7DC93A4DE45376CFB2 /* AuthModel.swift in Sources */,
+				BAD0FC63CCBD38B6CAC8BB09 /* ForgotPasswordButton.swift in Sources */,
+				BAD0F035FE50ECA16B79C73A /* String+localized.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

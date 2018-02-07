@@ -11,9 +11,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    override func loadView() {
+        super.loadView()
+
+        let loginButton = LoginButton()
+        loginButton.action = {
+            let controller = AuthViewController()
+            self.present(controller, animated: true)
+        }
+
+        view.addSubview(loginButton)
+
+        loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loginButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        loginButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/3).isActive = true
+        loginButton.heightAnchor.constraint(equalTo: loginButton.widthAnchor, multiplier: 1/3).isActive = true
+    }
+
     override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
     }
 
 
