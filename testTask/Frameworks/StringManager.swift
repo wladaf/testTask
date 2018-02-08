@@ -9,6 +9,11 @@ class StringManager {
     struct Alert {
         static let attention = "attention".localized()
         static let ok = "OK".localized()
+
+        static let forgotPasswordText = "forgotPasswordText".localized()
+        static let registerText = "registerText".localized()
+
+        static let temperatureInPetersburg = "temp".localized()
     }
 
     struct Auth {
