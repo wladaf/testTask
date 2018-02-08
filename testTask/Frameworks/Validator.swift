@@ -22,7 +22,7 @@ class Validator {
     }
 
     func validatePassword(_ password: String) -> ValidatorResult {
-        let passwordRegEx = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{6,}&"
+        let passwordRegEx = "(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{6,}"
 
         if validate(password, withRegex: passwordRegEx) {
             return .ok
