@@ -12,6 +12,8 @@ class GetWeatherByZipRequest: APIRequest {
     private var zip: Int!
     private var countryCode: String!
 
+    private var appId = "206c7e5250c394570f876038ac6ee3d8"
+
     init(withZip zip: Int, andCountryCode code: String) {
         self.zip = zip
         self.countryCode = code
@@ -23,5 +25,6 @@ class GetWeatherByZipRequest: APIRequest {
     func mapping(map: Map) {
         var zipPlusCountryCode = "\(zip),\(countryCode)"
         zip <- map["zip"]
+        appId <- map["APPID"]
     }
 }
