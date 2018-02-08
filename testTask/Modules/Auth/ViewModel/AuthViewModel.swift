@@ -15,18 +15,28 @@ class AuthViewModel {
         self.router = router
     }
 
-    private func login(withEmail email: String, password: String) {
+    func login(withEmail email: String, password: String) {
         let emailValidationResult = validator.validateEmail(email)
         let passwordValidationResult = validator.validatePassword(password)
 
         switch (emailValidationResult, passwordValidationResult) {
             case (.ok, .ok):
-                model.login() { temp in
+                model.login(withCompletion: { temp in
                     self.router.showAlertView(withTitle: StringManager.Alert.attention, message: temp)
+                }) { errorText in
+                    self.router.showAlertView(withTitle: StringManager.Alert.attention, message: errorText)
                 }
             case (.failed(let description), _),
                  (.ok, .failed(let description)):
                 router.showAlertView(withTitle: StringManager.Alert.attention, message: description)
         }
+    }
+
+    func register() {
+        router.showAlertView(withTitle: StringManager.Alert.attention, message: StringManager.Alert.registerText)
+    }
+
+    func forgotPassword() {
+        router.showAlertView(withTitle: StringManager.Alert.attention, message: StringManager.Alert.forgotPasswordText)
     }
 }

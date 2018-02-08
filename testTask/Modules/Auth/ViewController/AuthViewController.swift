@@ -20,6 +20,7 @@ class AuthViewController: UIViewController {
     lazy private var emailTextField: TextFieldWithAnimatedPlaceholder = {
         let textField = TextFieldWithAnimatedPlaceholder()
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.setKeyboardType(.emailAddress)
         textField.placeholderText = StringManager.Auth.email
         self.contentView.addSubview(textField)
         return textField
@@ -51,6 +52,7 @@ class AuthViewController: UIViewController {
     lazy private var loginButton: LoginButton = {
         let button = LoginButton()
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.action = self.login
         self.contentView.addSubview(button)
         return button
     }()
@@ -58,6 +60,7 @@ class AuthViewController: UIViewController {
     lazy private var registerButton: RegisterButton = {
         let button = RegisterButton()
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.action = self.register
         self.contentView.addSubview(button)
         return button
     }()
@@ -65,6 +68,7 @@ class AuthViewController: UIViewController {
     lazy private var forgotPasswordButton: ForgotPasswordButton = {
         let button = ForgotPasswordButton()
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.action = self.forgotPassword
         self.contentView.addSubview(button)
         return button
     }()
@@ -84,13 +88,24 @@ class AuthViewController: UIViewController {
         super.loadView()
 
         view.backgroundColor = .white
+
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(endEditing))
+        view.addGestureRecognizer(tapGesture)
+    }
+
+    @objc private func endEditing() {
+        self.view.endEditing(true)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.title = StringManager.Auth.title
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
+        let backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        backBarButtonItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.clear], for: .normal)
+        backBarButtonItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.clear], for: .highlighted)
+        navigationItem.backBarButtonItem = backBarButtonItem
 
         setConstraints()
     }
@@ -139,5 +154,22 @@ class AuthViewController: UIViewController {
         registerButton.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         registerButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 21).isActive = true
         registerButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+    }
+
+    private func login() {
+        view.endEditing(true)
+
+        let email = emailTextField.text
+        let password = passwordTextField.text
+
+        viewModel.login(withEmail: email, password: password)
+    }
+
+    private func register() {
+        viewModel.register()
+    }
+
+    private func forgotPassword() {
+        viewModel.forgotPassword()
     }
 }
