@@ -39,14 +39,8 @@ class TextFieldWithAnimatedPlaceholder: UIView {
 		}
 	}
 
-	var mainText: String = "" {
-		didSet {
-			textField.text = mainText
-
-			if mainText != "" {
-				changeState(.filled)
-			}
-		}
+	var text: String {
+		return textField.text ?? ""
 	}
 
 	var valueChangedAction: ( (String?) -> () )?
@@ -206,6 +200,9 @@ class TextFieldWithAnimatedPlaceholder: UIView {
 		textField.isSecureTextEntry = value
 	}
 
+    func setKeyboardType(_ type: UIKeyboardType) {
+        textField.keyboardType = type
+    }
 }
 
 extension TextFieldWithAnimatedPlaceholder: UITextFieldDelegate {
