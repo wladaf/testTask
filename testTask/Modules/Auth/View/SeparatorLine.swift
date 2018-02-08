@@ -20,7 +20,7 @@ class SeparatorLine: UIView {
     }
 
     private func customize() {
-        backgroundColor = UIColor.customGray.withAlphaComponent(0.5)
+        backgroundColor = UIColor.customGray.withAlphaComponent(0.2)
         heightAnchor.constraint(equalToConstant: 1).isActive = true
     }
 }
