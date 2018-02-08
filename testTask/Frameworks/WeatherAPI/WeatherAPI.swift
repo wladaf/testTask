@@ -11,7 +11,7 @@ import RxSwift
 
 class WeatherAPI {
     lazy private var disposeBag: DisposeBag = { return DisposeBag() }()
-    private let baseURL = "api.openweathermap.org/"
+    private let baseURL = "https://api.openweathermap.org/"
 
     func sendRequest<T: APIResponse>(_ request: APIRequest) -> Observable<T> {
         let url = baseURL + request.method
@@ -20,7 +20,7 @@ class WeatherAPI {
         return RxAlamofire.request(.get, url, parameters: parameters)
                 .flatMap { request -> Observable<T> in
                     let validatedRequest = request.validate(statusCode: 200..<300)
-                            .validate(contentType: ["text/json"])
+                            .validate(contentType: ["application/json"])
 
                     return validatedRequest.rx.json().flatMap { json -> Observable<T> in
                         if let jsonDict = json as? [String: AnyObject],
