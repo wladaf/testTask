@@ -48,7 +48,12 @@ class TextFieldWithAnimatedPlaceholder: UIView {
 	private let bigFontSize: CGFloat = 16.0
 	private let smallFontSize: CGFloat = 13.0
 
-	private let viewDefaultInset: CGFloat = 8.0
+	private let viewDefaultInset: CGFloat = 6.0
+
+	private var smallFontLineHeight: CGFloat { return UIFont.systemFont(ofSize: smallFontSize).lineHeight }
+	private var bigFontLineHeight: CGFloat { return UIFont.systemFont(ofSize: bigFontSize).lineHeight }
+
+	private var fullHeight: CGFloat { return smallFontLineHeight + bigFontLineHeight + 3 * self.viewDefaultInset }
 
 	private let animationDuration: Double = 0.2
 
@@ -117,13 +122,15 @@ class TextFieldWithAnimatedPlaceholder: UIView {
 	}
 
 	private func setConstraints() {
+		self.heightAnchor.constraint(equalToConstant: fullHeight).isActive = true
+
 		placeholderLabel.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
 		placeholderLabel.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
 
 		textField.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
 		textField.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
 
-		textField.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0.0).isActive = true
+		textField.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -viewDefaultInset).isActive = true
 
 
 		placeholderLabelBottomSpaceConstraint = placeholderLabel.bottomAnchor.constraint(equalTo: textField.topAnchor, constant: -viewDefaultInset)
@@ -132,11 +139,8 @@ class TextFieldWithAnimatedPlaceholder: UIView {
 		placeholderLabelTopSpaceConstraint = placeholderLabel.topAnchor.constraint(equalTo: topAnchor, constant: viewDefaultInset)
 		placeholderLabelTopSpaceConstraint.isActive = true
 
-		textFieldHeightConstraint = textField.heightAnchor.constraint(equalToConstant: 50.0)
+		textFieldHeightConstraint = textField.heightAnchor.constraint(equalToConstant: bigFontLineHeight)
 		textFieldHeightConstraint.isActive = true
-
-		placeholderLabelHeightConstraint = placeholderLabel.heightAnchor.constraint(equalToConstant: 70.0)
-		placeholderLabelHeightConstraint.isActive = true
 
 		changeState(.empty, animated: false)
 	}
@@ -155,8 +159,8 @@ class TextFieldWithAnimatedPlaceholder: UIView {
 	private func setEmptyState(animated: Bool) {
 		self.textFieldHeightConstraint.constant = 0.0
 
-		self.placeholderLabelTopSpaceConstraint.constant = self.viewDefaultInset
-		self.placeholderLabelBottomSpaceConstraint.constant = -self.viewDefaultInset
+		self.placeholderLabelTopSpaceConstraint.constant = fullHeight - 2 * viewDefaultInset - smallFontLineHeight
+		self.placeholderLabelBottomSpaceConstraint.constant = 0
 
 		self.placeholderLabel.font = self.placeholderLabel.font.withSize(self.bigFontSize)
 
@@ -168,10 +172,10 @@ class TextFieldWithAnimatedPlaceholder: UIView {
 	}
 
 	private func setFilledState(animated: Bool) {
-		self.textFieldHeightConstraint.constant = 40.0
+		self.textFieldHeightConstraint.constant = bigFontLineHeight
 
-		self.placeholderLabelTopSpaceConstraint.constant = 0.0
-		self.placeholderLabelBottomSpaceConstraint.constant = 0.0
+		self.placeholderLabelTopSpaceConstraint.constant = viewDefaultInset
+		self.placeholderLabelBottomSpaceConstraint.constant = -viewDefaultInset
 
 		self.placeholderLabel.font = self.placeholderLabel.font.withSize(self.smallFontSize)
 

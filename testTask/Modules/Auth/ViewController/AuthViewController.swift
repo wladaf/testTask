@@ -125,7 +125,6 @@ class AuthViewController: UIViewController {
         emailTextField.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         emailTextField.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive =  true
         emailTextField.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-        emailTextField.heightAnchor.constraint(equalTo: emailTextField.widthAnchor, multiplier: 1/8).isActive = true
 
         emailSeparatorLine.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         emailSeparatorLine.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
@@ -133,13 +132,12 @@ class AuthViewController: UIViewController {
 
         passwordTextField.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         passwordTextField.topAnchor.constraint(equalTo: emailSeparatorLine.bottomAnchor, constant: 12).isActive = true
-        passwordTextField.heightAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 1/8).isActive = true
 
         forgotPasswordButton.leftAnchor.constraint(equalTo: passwordTextField.rightAnchor, constant: 12).isActive = true
         forgotPasswordButton.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
-        forgotPasswordButton.centerYAnchor.constraint(equalTo: passwordTextField.centerYAnchor).isActive = true
+        forgotPasswordButton.bottomAnchor.constraint(equalTo: passwordTextField.bottomAnchor).isActive = true
         forgotPasswordButton.widthAnchor.constraint(equalTo: passwordTextField.widthAnchor, multiplier: 3/5).isActive = true
-        forgotPasswordButton.heightAnchor.constraint(equalTo: passwordTextField.heightAnchor, multiplier: 1.0).isActive = true
+        forgotPasswordButton.heightAnchor.constraint(equalTo: passwordTextField.heightAnchor, multiplier: 0.8).isActive = true
 
         passwordSeparatorLine.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         passwordSeparatorLine.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
