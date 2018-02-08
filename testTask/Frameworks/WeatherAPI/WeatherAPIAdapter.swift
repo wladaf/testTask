@@ -13,4 +13,9 @@ class WeatherAPIAdapter {
         let request = GetWeatherByZipRequest(withZip: zip, andCountryCode: countryCode)
         return weatherAPI.sendRequest(request)
     }
+
+    func getWeatherForSaintPetersburg() -> Observable<GetWeatherByZipResponse> {
+        let request = GetWeatherByCityIdRequest()
+        return weatherAPI.sendRequest(request)
+    }
 }
