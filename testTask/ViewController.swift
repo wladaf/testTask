@@ -15,9 +15,10 @@ class ViewController: UIViewController {
         super.loadView()
 
         let loginButton = LoginButton()
+        loginButton.setTitle(StringManager.Auth.title, for: UIControlState())
         loginButton.action = {
             let controller = AuthViewController()
-            self.present(controller, animated: true)
+            self.navigationController?.pushViewController(controller, animated: true)
         }
 
         view.addSubview(loginButton)
@@ -29,7 +30,9 @@ class ViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-    super.viewDidLoad()
+        super.viewDidLoad()
+
+        view.backgroundColor = .white
     }
 
 

@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  testTask
+
+  Created by Владислав Афанасьев on 08/02/2018.
+  Copyright © 2018 Владислав Афанасьев. All rights reserved.
+*/
+"attention" = "Внимание";
+"OK" = "OK";
+
+"Authorization" = "Авторизация";
+"login" = "Войти";
+"createNewAccount" = "У меня еще нет аккаунта. Создать.";
+"forgotPassword" = "Забыли пароль?";
+"email" = "Почта";
+"password" = "Пароль";
+
+"EmailHasWrongFormat" = "Почта введена неверно";
+"PasswordHasWrongFormat" = "Пароль введен неверно";

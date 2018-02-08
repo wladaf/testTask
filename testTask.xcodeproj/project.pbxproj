@@ -10,6 +10,7 @@
 		0696B089BB604B7368D2E0C2 /* Pods_testTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF42E88B78754DCB3A12C814 /* Pods_testTask.framework */; };
 		BAD0F035FE50ECA16B79C73A /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F36DDCBC3686508E36F0 /* String+localized.swift */; };
 		BAD0F161A425F8B7836B296D /* StringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0FF0984B14E1007D43530 /* StringManager.swift */; };
+		BAD0F3354C243F8EDB49A820 /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0FB6FC9F2D049C037A4DD /* RegisterButton.swift */; };
 		BAD0F4E620E35DD134E7BD08 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F17D7596B06A7C40FE8A /* AuthRouter.swift */; };
 		BAD0F5B1B18F4C26FEECB78C /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F5B064F416A4AC3A3120 /* LoginButton.swift */; };
 		BAD0F5FDE7689B26026199AA /* APIResponse.Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F7E4DA8C23E202BC2E01 /* APIResponse.Protocol.swift */; };
@@ -23,12 +24,14 @@
 		BAD0FC6E7E982B11A055A96E /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F466C0596635E97AD9F8 /* WeatherAPI.swift */; };
 		BAD0FD2BAA145A48D086F4E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD0F80CE922032DBFA85689 /* Assets.xcassets */; };
 		BAD0FD7DC93A4DE45376CFB2 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F22FF9079479B8ECAC5C /* AuthModel.swift */; };
-		BAD0FE9670114034C994848B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD0F49D6B722170689D239C /* Main.storyboard */; };
+		BAD0FD9B988389F3BC1F9E2D /* SeparatorLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0FD549361321E9ADCA7D3 /* SeparatorLine.swift */; };
+		BAD0FE0D14C1DA9EA763FB0D /* TextFieldWithAnimatedPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F7D59B5B61A15AD1C94F /* TextFieldWithAnimatedPlaceholder.swift */; };
 		BAD0FEC8FC779EA9570D06E3 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F9AB0D54B2CB20B7D5F7 /* AuthViewModel.swift */; };
 		BAD0FF0C9274DE1E57DE807B /* GetWeatherByZipResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0FA4948CDE92E0640E1AE /* GetWeatherByZipResponse.swift */; };
 		BAD0FF67731925E377B5E420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F5F62193BD4A50ED8598 /* AppDelegate.swift */; };
 		BAD0FF8CFE2CCD3EA1A838AC /* WeatherAPIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F0A7F6412A3404917446 /* WeatherAPIAdapter.swift */; };
 		BAD0FF9A16973D7758D0D13C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0F4996CB308B0C0570F09 /* ViewController.swift */; };
+		F34D1749202CD4C100D542E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F34D174B202CD4C100D542E9 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,16 +51,21 @@
 		BAD0F5B064F416A4AC3A3120 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		BAD0F5E4E7202A72D87A8F96 /* APIRequest.Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.Protocol.swift; sourceTree = "<group>"; };
 		BAD0F5F62193BD4A50ED8598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAD0F7D59B5B61A15AD1C94F /* TextFieldWithAnimatedPlaceholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldWithAnimatedPlaceholder.swift; sourceTree = "<group>"; };
 		BAD0F7E4DA8C23E202BC2E01 /* APIResponse.Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.Protocol.swift; sourceTree = "<group>"; };
 		BAD0F80CE922032DBFA85689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAD0F9AB0D54B2CB20B7D5F7 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		BAD0FA2A303CD529808708B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAD0FA4948CDE92E0640E1AE /* GetWeatherByZipResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetWeatherByZipResponse.swift; sourceTree = "<group>"; };
 		BAD0FAE9FF56A15073B3D592 /* UIColor+customColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+customColors.swift"; sourceTree = "<group>"; };
 		BAD0FB44626D101425ADF563 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		BAD0FB6FC9F2D049C037A4DD /* RegisterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
+		BAD0FD549361321E9ADCA7D3 /* SeparatorLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparatorLine.swift; sourceTree = "<group>"; };
 		BAD0FD79C178162CB018AA61 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		BAD0FF0984B14E1007D43530 /* StringManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringManager.swift; sourceTree = "<group>"; };
 		EF42E88B78754DCB3A12C814 /* Pods_testTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34D1746202CD3FD00D542E9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F34D174A202CD4C100D542E9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F34D174C202CD4C600D542E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +104,12 @@
 				BAD0F80CE922032DBFA85689 /* Assets.xcassets */,
 				BAD0FC678A5C9E21B9CF815B /* LaunchScreen.storyboard */,
 				BAD0F5F62193BD4A50ED8598 /* AppDelegate.swift */,
-				BAD0F49D6B722170689D239C /* Main.storyboard */,
 				BAD0F4996CB308B0C0570F09 /* ViewController.swift */,
 				BAD0FB7433FA376069326C1D /* Modules */,
 				BAD0FAFC969F5D15708B52AB /* Extensions */,
 				BAD0FB8F1A58490F1BC4B74E /* Frameworks */,
 				BAD0FA1FFCE2AA2ED61D29A2 /* Entity */,
+				F34D174B202CD4C100D542E9 /* Localizable.strings */,
 			);
 			path = testTask;
 			sourceTree = "<group>";
@@ -228,6 +236,9 @@
 			children = (
 				BAD0F5B064F416A4AC3A3120 /* LoginButton.swift */,
 				BAD0F33AE37A10199F370856 /* ForgotPasswordButton.swift */,
+				BAD0FD549361321E9ADCA7D3 /* SeparatorLine.swift */,
+				BAD0FB6FC9F2D049C037A4DD /* RegisterButton.swift */,
+				BAD0F7D59B5B61A15AD1C94F /* TextFieldWithAnimatedPlaceholder.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,8 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD0FD2BAA145A48D086F4E3 /* Assets.xcassets in Resources */,
+				F34D1749202CD4C100D542E9 /* Localizable.strings in Resources */,
 				BAD0FA390AA8859F1AA16DEA /* LaunchScreen.storyboard in Resources */,
-				BAD0FE9670114034C994848B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,26 +391,31 @@
 				BAD0FD7DC93A4DE45376CFB2 /* AuthModel.swift in Sources */,
 				BAD0FC63CCBD38B6CAC8BB09 /* ForgotPasswordButton.swift in Sources */,
 				BAD0F035FE50ECA16B79C73A /* String+localized.swift in Sources */,
+				BAD0FD9B988389F3BC1F9E2D /* SeparatorLine.swift in Sources */,
+				BAD0F3354C243F8EDB49A820 /* RegisterButton.swift in Sources */,
+				BAD0FE0D14C1DA9EA763FB0D /* TextFieldWithAnimatedPlaceholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BAD0F49D6B722170689D239C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BAD0FA2A303CD529808708B9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BAD0FC678A5C9E21B9CF815B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BAD0F1034D8AE176C5E75383 /* Base */,
+				F34D1746202CD3FD00D542E9 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F34D174B202CD4C100D542E9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F34D174A202CD4C100D542E9 /* ru */,
+				F34D174C202CD4C600D542E9 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -409,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -496,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

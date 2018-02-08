@@ -12,9 +12,13 @@ class StringManager {
     }
 
     struct Auth {
+        static let title = "Authorization".localized()
         static let login = "login".localized()
         static let createNewAccount = "createNewAccount".localized()
         static let forgotPassword = "forgotPassword".localized()
+
+        static let email = "email".localized()
+        static let password = "password".localized()
     }
 
     struct Validator {
