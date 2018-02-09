@@ -214,7 +214,7 @@ extension TextFieldWithAnimatedPlaceholder: UITextFieldDelegate {
 		if maxLength == 0 { return true }
 		guard let text = textField.text else { return true }
 		
-		let newLength = text.characters.count + string.characters.count - range.length
+		let newLength = text.count + string.count - range.length
 		return newLength <= maxLength
 	}
 
