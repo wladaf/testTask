@@ -155,6 +155,8 @@ class AuthViewController: UIViewController {
     }
 
     private func login() {
+        view.endEditing(true)
+
         let email = emailTextField.text
         let password = passwordTextField.text
 

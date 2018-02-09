@@ -179,19 +179,18 @@ class TextFieldWithAnimatedPlaceholder: UIView {
 
 		self.placeholderLabel.font = self.placeholderLabel.font.withSize(self.smallFontSize)
 
+		self.textField.becomeFirstResponder()
+
 		if animated {
 			animateLayout()
 		} else {
 			self.layoutIfNeeded()
-			self.textField.becomeFirstResponder()
 		}
 	}
 
 	private func animateLayout() {
-		UIView.animate(withDuration: animationDuration, animations: {
+		UIView.animate(withDuration: animationDuration) {
 			self.layoutIfNeeded()
-		}) { _ in
-			self.textField.becomeFirstResponder()
 		}
 	}
 
@@ -215,7 +214,7 @@ extension TextFieldWithAnimatedPlaceholder: UITextFieldDelegate {
 		if maxLength == 0 { return true }
 		guard let text = textField.text else { return true }
 		
-		let newLength = text.count + string.count - range.length
+		let newLength = text.characters.count + string.characters.count - range.length
 		return newLength <= maxLength
 	}
 
@@ -228,9 +227,5 @@ extension TextFieldWithAnimatedPlaceholder: UITextFieldDelegate {
 					break
 			}
 		}
-	}
-
-	func textFieldDidBeginEditing(_ textField: UITextField) {
-		changeState(.filled)
 	}
 }
