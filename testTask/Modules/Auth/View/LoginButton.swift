@@ -9,6 +9,21 @@ import UIKit
 class LoginButton: UIButton {
     var action: () -> () = {}
 
+    override var isHighlighted: Bool {
+        get {
+            return super.isHighlighted
+        }
+        set {
+            super.isHighlighted = newValue
+
+            if isHighlighted {
+                backgroundColor = UIColor.customOrange.withAlphaComponent(0.8)
+            } else {
+                backgroundColor = .customOrange
+            }
+        }
+    }
+
     override init(frame: CGRect = CGRect.zero) {
         super.init(frame: frame)
 

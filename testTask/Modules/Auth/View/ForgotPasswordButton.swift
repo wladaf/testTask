@@ -10,6 +10,21 @@ import QuartzCore
 class ForgotPasswordButton: UIButton {
     var action: () -> () = {}
 
+    override var isHighlighted: Bool {
+        get {
+            return super.isHighlighted
+        }
+        set {
+            super.isHighlighted = newValue
+
+            if isHighlighted {
+                backgroundColor = UIColor.init(white: 0.9, alpha: 1.0)
+            } else {
+                backgroundColor = .white
+            }
+        }
+    }
+
     override init(frame: CGRect = CGRect.zero) {
         super.init(frame: frame)
 

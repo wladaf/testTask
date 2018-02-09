@@ -9,6 +9,21 @@ import UIKit
 class RegisterButton: UIButton {
     var action: () -> () = {}
 
+    override var isHighlighted: Bool {
+        get {
+            return super.isHighlighted
+        }
+        set {
+            super.isHighlighted = newValue
+
+            if isHighlighted {
+                setTitleColor(.gray, for: UIControlState())
+            } else {
+                setTitleColor(.customBlue, for: UIControlState())
+            }
+        }
+    }
+
     override init(frame: CGRect = CGRect.zero) {
         super.init(frame: frame)
 
@@ -24,7 +39,7 @@ class RegisterButton: UIButton {
     private func customize() {
         translatesAutoresizingMaskIntoConstraints = false
 
-        backgroundColor = .clear
+        backgroundColor = .white
         setTitle(StringManager.Auth.createNewAccount, for: UIControlState())
         setTitleColor(.customBlue, for: UIControlState())
         titleLabel?.font = UIFont.systemFont(ofSize: 15)
