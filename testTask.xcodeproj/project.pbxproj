@@ -276,6 +276,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					BAD0F1DE1DA18CFAE1A81980 = {
+						DevelopmentTeam = C885RTZ4EC;
+					};
+				};
 			};
 			buildConfigurationList = BAD0F9905F1BAFB20435290B /* Build configuration list for PBXProject "testTask" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -488,10 +493,11 @@
 			baseConfigurationReference = 391708E67172D248C48357BF /* Pods-testTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C885RTZ4EC;
 				INFOPLIST_FILE = testTask/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = test.testTask;
+				PRODUCT_BUNDLE_IDENTIFIER = wladaf.testTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -503,10 +509,11 @@
 			baseConfigurationReference = 4368D170AE9403FE76D63E50 /* Pods-testTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C885RTZ4EC;
 				INFOPLIST_FILE = testTask/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = test.testTask;
+				PRODUCT_BUNDLE_IDENTIFIER = wladaf.testTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
