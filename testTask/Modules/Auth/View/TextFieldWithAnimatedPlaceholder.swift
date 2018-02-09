@@ -228,4 +228,8 @@ extension TextFieldWithAnimatedPlaceholder: UITextFieldDelegate {
 			}
 		}
 	}
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        changeState(.filled)
+    }
 }
