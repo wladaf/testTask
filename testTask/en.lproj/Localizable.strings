@@ -5,3 +5,20 @@
   Created by Владислав Афанасьев on 08/02/2018.
   Copyright © 2018 Владислав Афанасьев. All rights reserved.
 */
+"attention" = "Внимание";
+"OK" = "OK";
+
+"forgotPasswordText" = "Кажется, вы забыли пароль..?";
+"registerText" = "Доступно только в платной версии";
+
+"Authorization" = "Авторизация";
+"login" = "Войти";
+"createNewAccount" = "У меня еще нет аккаунта. Создать.";
+"forgotPassword" = "Забыли пароль?";
+"email" = "Почта";
+"password" = "Пароль";
+
+"temp" = "Температура в Петербурге";
+
+"EmailHasWrongFormat" = "Почта введена неверно";
+"PasswordHasWrongFormat" = "Пароль введен неверно";
